@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SkinMenuHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject _player;
+    [SerializeField] private PlayerBehaviour _player;
+    [SerializeField] private GameObject _playerSkin;
+
     public void SkinSelect(GameObject skin)
     {
-        Destroy(_player.transform.GetChild(0).gameObject);
-        skin = Instantiate(skin,_player.transform.position,Quaternion.identity);
-        skin.transform.parent = _player.transform;
+        _playerSkin.SetActive(false);
+        _playerSkin = skin;
+        _player.anim = _playerSkin.GetComponent<Animation>();
+        skin.SetActive(true);
     }
 }

@@ -8,7 +8,7 @@ ModelImporter:
     second: CharacterArmature|Death
   - first:
       74: 9061338213343248790
-    second: CharacterArmature|Idle
+    second: Idle
   - first:
       74: 8819464772823671264
     second: CharacterArmature|Idle_Attacking
@@ -45,6 +45,51 @@ ModelImporter:
   - first:
       74: -5599002979973759676
     second: CharacterArmature|Walk
+  - first:
+      74: 8932812107824697931
+    second: CharacterArmature|Death //// CharacterArmature
+  - first:
+      74: 7354898182454534683
+    second: CharacterArmature|Idle //// CharacterArmature
+  - first:
+      74: 7929085977259576542
+    second: CharacterArmature|Idle_Attacking //// CharacterArmature
+  - first:
+      74: 7512530703369276609
+    second: CharacterArmature|Idle_Weapon //// CharacterArmature
+  - first:
+      74: -8903014631623063006
+    second: CharacterArmature|PickUp //// CharacterArmature
+  - first:
+      74: -4139034641077042407
+    second: CharacterArmature|Punch //// CharacterArmature
+  - first:
+      74: 555714320501294486
+    second: CharacterArmature|RecieveHit //// CharacterArmature
+  - first:
+      74: 5275687500394112048
+    second: CharacterArmature|RecieveHit_Attacking //// CharacterArmature
+  - first:
+      74: 5272645888765300092
+    second: CharacterArmature|Roll //// CharacterArmature
+  - first:
+      74: -5873051400403583325
+    second: CharacterArmature|Run //// CharacterArmature
+  - first:
+      74: 230300880780530726
+    second: CharacterArmature|Run_Weapon //// CharacterArmature
+  - first:
+      74: -8937701782705029028
+    second: CharacterArmature|Sword_Attack //// CharacterArmature
+  - first:
+      74: -573904369290461000
+    second: CharacterArmature|Sword_AttackFast //// CharacterArmature
+  - first:
+      74: -7901034218922807753
+    second: CharacterArmature|Walk //// CharacterArmature
+  - first:
+      74: 5522812681064789136
+    second: Run
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -82,7 +127,65 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: CharacterArmature|Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 75
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: CharacterArmature|Run
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -136,11 +239,11 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

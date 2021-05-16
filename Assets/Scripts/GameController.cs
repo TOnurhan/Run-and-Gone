@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
+using System;
 
 public class GameController : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class GameController : MonoBehaviour
     private float _totalPoint;
     private float _point;
     public bool gameStarted;
+
+    public event Action GameStarted;
 
     void Initialize()
     {
@@ -47,7 +50,6 @@ public class GameController : MonoBehaviour
 
     private void GetLevel()
     {
-        
         for(int i = 0; i < obstaclePoints.Count; i++)
         {
             _objectPool.SpawnPooledObject(obstaclePoints[i].position);
@@ -60,6 +62,7 @@ public class GameController : MonoBehaviour
         _stageMenuButton.gameObject.SetActive(false);
         _skinMenuButton.gameObject.SetActive(false);
         gameStarted = true;
+        GameStarted?.Invoke();
 
         EventSystem.PointerDowned -= LevelStart;
     }
