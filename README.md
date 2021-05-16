@@ -2,6 +2,8 @@
 Run and Gone is my first original game. When it's finished, I am going to publish it on PlayStore. It is still in progress. Here are some in game screenshots:
 
 ![images](/Images/InGameSS.png)
+![images](/Images/Gif_1.gif)
+![images](/Images/Gif_2.gif)
 
 Features: 
 - Episode menu selection by sliding images.
