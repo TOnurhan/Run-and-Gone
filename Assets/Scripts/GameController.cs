@@ -112,9 +112,3 @@ public class GameController : MonoBehaviour
         EventSystem.PointerDowned += LevelStart;
     }
 }
-
-//Rigidbody, gravity script ile değiş.???
-//Kamera yer değiştikten sonra menü.
-//Toplam puan
-//Timer for point section.
-//Curved movement
